@@ -1,5 +1,10 @@
 ##Runing the tests
 - go test ./...
+- go test ./... -short
+- go test ./... -v
+- go test ./... -run CanAdd
+- go test ./... -timeout 2s
+- go test ./... -timeout 2m
 - go test ./... -cover
 - go test ./... -coverprofile=cover.out
 - go tool cover -func=cover.out
