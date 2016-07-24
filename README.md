@@ -1,12 +1,13 @@
 ##Runing the tests
-- go test ./...
-- go test ./... -short
-- go test ./... -v
-- go test ./... -run CanAdd
-- go test ./... -timeout 2s
-- go test ./... -timeout 2m
-- go test ./... -cover
-- go test ./... -coverprofile=cover.out
+- go test ./pack/...
+- go test ./pack/... -short
+- go test ./pack/... -v
+- go test ./pack/... -run CanAdd
+- go test ./pack/... -timeout 2s
+- go test ./pack/... -timeout 2m
+- go test ./pack/... -cover
+- go test ./pack/... -coverprofile=cover.out
+- go test ./pack/... -covermode=count -coverprofile=cover.out
 - go tool cover -func=cover.out
 - go tool cover -html=cover.out
-- go test ./... -bench .
+- go test ./pack/... -bench .
