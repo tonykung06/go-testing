@@ -10,4 +10,4 @@
 - go test ./pack/... -covermode=count -coverprofile=cover.out
 - go tool cover -func=cover.out
 - go tool cover -html=cover.out
-- go test ./pack/... -bench .
+- go test ./pack/... -bench=.
